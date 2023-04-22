@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário de Informações Pessoais</title>
+</head>
+<body>
+	<h1>Formulário de Informações Pessoais</h1>
+	<form action="processa_form.php" method="POST">
+		<fieldset>
+			<legend>Informações pessoais:</legend>
+			<label for="nome">Nome completo:</label>
+			<input type="text" id="nome" name="nome" required>
+			<br><br>
+			<label for="cidade">Cidade onde mora:</label>
+			<input type="text" id="cidade" name="cidade" required>
+		</fieldset>
+		<br><br>
+		<fieldset>
+			<legend>Conquistas recentes:</legend>
+			<label for="conquistas">Descreva suas conquistas pessoais recentes:</label>
+			<textarea id="conquistas" name="conquistas" rows="4" cols="50"></textarea>
+		</fieldset>
+		<br><br>
+		<fieldset>
+			<legend>Hábitos de sono:</legend>
+			<label for="horas_sono">Quantas horas você dorme por dia?</label>
+			<input type="number" id="horas_sono" name="horas_sono" min="0" max="24" required>
+		</fieldset>
+		<br><br>
+		<fieldset>
+			<legend>Gestão financeira:</legend>
+			<p>Você consegue economizar dinheiro?</p>
+			<label for="economia_sim">Sim</label>
+			<input type="radio" id="economia_sim" name="economia" value="sim" required>
+			<label for="economia_nao">Não</label>
+			<input type="radio" id="economia_nao" name="economia" value="nao">
+			<label for="economia_nada">Não entendo nada sobre gestão financeira</label>
+			<input type="radio" id="economia_nada" name="economia" value="nada">
+			<br><br>
+			<label for="estrategia">Qual a sua estratégia de economia?</label>
+			<input type="text" id="estrategia" name="estrategia">
+		</fieldset>
+		<br><br>
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
