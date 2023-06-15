@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(100, 2, 2);
+        }
+        
+        p > img{
+            margin-top: 50px;
+            width: 600px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        caption{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: yellow;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(255, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+        }
+        table{
+            width: 600px;
+            height: 600px;
+            background-color: rgb(244, 235, 75);
+            border-collapse: collapse;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .cab{
+            text-align: center;
+            color: rgb(255, 0, 0);
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+        .pro{
+            width: 50px;
+            text-align: center;
+        }
+        td > img{
+            width:100px;
+            height:100px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            
+        }
+        td,th{
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            vertical-align: middle;
+            border-left: none;
+            border-right: none;
+        }
+      li,p{
+            font-weight: bolder;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            vertical-align: middle;   
+        }
+        .ped:hover{   
+            color: blue;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+   <p><img src="tit1.png" width="500px" height="100px"></p>
+    <table>
+        <caption>MENU</caption>
+        <thead>
+            <tr>
+                <th scope="col" class="cab">EAN</th>
+                <th class="cab">Foto</th>
+                <th class="cab">Nome</th>
+                <th class="cab">Estoque</th>
+                <th class="cab">Preço R$</th>
+                <th class="cab">Vencimento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>123456789</td>
+                <td><img src="coca.jpeg"></a></td> 
+                <td>
+                    <p>Coca-cola</p>
+                    <ul>
+                        <li>2L</li>
+                    </ul>
+                
+                <td>1000</td>
+                <td class="pro">06,99</td>
+                <td>05/06/2023</td>
+            </tr>
+            <tr>
+                <td>2134664488</td>
+                <td><img src="hab.jpeg"></td>
+                <td>Hamburguer</td> 
+                <td>235</td>
+                <td class="pro">06,77</td>
+                <td>05/06/2023</td>
+            </tr>
+            <tr>
+                <td>758496321</td>
+                <td><img src="pizza.jpeg"></td> 
+                <td>Pizza</td>
+                <td>452</td>
+                <td class="pro">192,44</td>
+                <td>05/06/2023</td>
+            </tr>
+            <tr>
+                <td>962148552</td>
+                <td><img src="acai.jpeg"></td> 
+                <td>Açai</td>
+                <td>628</td>
+                <td class="pro">84,00</td>
+                <td>05/06/2023</td>
+            </tr>
+            <tr>
+                <td>96458212</td>
+                <td><img src="bolo.jpeg"></td>
+                <td>Bolo</td> 
+                <td>345</td>
+                <td class="pro">92,99</td>
+                <td>05/06/2023</td>
+            </tr>
+            <tr>
+                <td>985664754</td>
+                <td><img src="rosc.jpeg"></td>
+                <td>Donalds</td> 
+                <td>345</td>
+                <td class="pro">92,99</td>
+                <td>05/06/2023</td>
+            </tr>
+            <td colspan="6" style="text-align: center;"> Para fazer seu pedido <a href="#">clique aqui</a>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="6" style="text-align: center;">
+                Dienifer Rodrigues Lenz --- Brenda Bittencourt Schneider
+            </th>
+        </tfoot>
+    </table>
+</body>
+</html>
